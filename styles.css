@@ -163,6 +163,35 @@ body {
     box-shadow: 0 6px 20px rgba(255, 68, 68, 0.6);
 }
 
+/* Anime Banner Section */
+.anime-banner {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.anime-banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.anime-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(255, 68, 68, 0.4);
+    animation: fadeInUp 0.8s ease;
+    border: 3px solid var(--primary-color);
+    object-fit: contain;
+}
+
 /* Rating Section */
 .rating-section {
     background: var(--light-bg);
@@ -593,6 +622,10 @@ body {
         height: 300px;
     }
 
+    .anime-image {
+        max-height: 300px;
+    }
+
     section {
         padding: 50px 20px !important;
     }
@@ -621,5 +654,9 @@ body {
     .facilities-grid,
     .reviews-grid {
         grid-template-columns: 1fr;
+    }
+
+    .anime-image {
+        max-height: 250px;
     }
 }
